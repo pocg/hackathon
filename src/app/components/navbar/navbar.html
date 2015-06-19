@@ -1,0 +1,26 @@
+<nav class="navbar navbar-static-top navbar-inverse" ng-controller="NavbarCtrl">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <img class="logoImage" src="http://static1.squarespace.com/static/5336dda8e4b0dad6e897b58f/t/54da8d73e4b0a4fe55c30d3b/1434378900106/?format=1500w">
+      <a class="navbar-brand" href="http://www.pocg.com/">
+        <!--<span class="glyphicon glyphicon-home"></span> Phase One-->
+      </a>
+      </img>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
+      <ul class="nav navbar-nav">
+        <li class="active"><a ng-href="#">Home</a></li>
+        <li><a ng-href="#">About</a></li>
+        <li><a ng-href="#">Contact</a></li>
+      </ul>
+
+      <ul class="criteria nav navbar-nav navbar-right">
+        <div class="form-group has-feedback">
+            <i class="fa fa-search fa-lg form-control-feedback"></i>
+           <input id="criteria" class="form-control search" placeholder="search" type="search" ng-enter="search()" ng-model="criteria" />
+        </div>
+      </ul>
+    </div>
+  </div>
+</nav>

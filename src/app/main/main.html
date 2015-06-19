@@ -1,0 +1,38 @@
+<div class="container">
+
+  <div ng-include="'app/components/navbar/navbar.html'"></div>
+
+  <div class="row">
+        <div class="caption">
+          <h3>Phase One Open FDA</h3>
+          <p>{{data.disclaimer}}</p>
+        </div>
+  </div>
+
+  <div class="row">
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>City</th>
+        <th>State</th>
+        <th>Recalling Firm</th>
+        <th>Reason</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr ng-repeat="result in data.results | orderBy:'state'">
+        <td>{{result.city}}</td>
+        <td>{{result.state}}</td>
+        <td>{{result.recalling_firm}}</td>
+        <td>{{result.reason_for_recall}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <hr>
+
+  <div class="footer">
+  </div>
+
+</div>
