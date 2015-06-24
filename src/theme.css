@@ -2,13 +2,20 @@
 /* CSS Document */
 .container{
 	width:80%;
-	border:solid 1px #006600;}
+	}
 
 .nav-container-fluid{
-	background-color:#249b40;
-	color:#fff;}
-.navbar-label{
-	
+	background-color:#249b40;;
+	color:#fff;
+	font-family:Nunito;}
+.navbar-label h1{
+	font-size:62pt;
+	}
+.navbar-label h2{
+	font-size:30pt;
+	}
+	.navbar-label h3{
+	font-size:60pt;
 	}	
 
 .nav-search{
