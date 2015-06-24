@@ -29,12 +29,12 @@ input.search {
 }
 
 img.logoImage {
-  height: auto;
   max-height: 20px;
   width: auto;
   max-width: 100%;
-  padding-top: 15px;
-  //padding-left: -1px;
+  float: left;
+  padding-right: 5px;
+  padding-left: 30px;
 }
 
 .navbar-header
@@ -111,7 +111,7 @@ img.logoImage {
 
 .topProducts table
 {
-    
+    background: #b6b696;
     width: 98%;
     height:150px;
 }
@@ -130,13 +130,15 @@ img.logoImage {
 {
     float: left;
     padding: 0 1%;
-    width: 30%;
+	padding-top: 5%;
+    width: auto;
+	height: 60px;
     vertical-align: middle;
 }
 
 .topProducts p
 {
-    float: right;
+    float: left;
     color: White;
     width: 50%;
 }
