@@ -4,6 +4,22 @@
 	width:80%;
 	border:solid 1px #006600;}
 
+.nav-container-fluid{
+	background-color:#249b40;
+	color:#fff;}
+.navbar-label{
+	
+	}	
+
+.nav-search{
+	
+	}	
+
+.top-recalls{
+	background-color:#b6b696;}	
+	
+		
+
 .left-col{
 	width:48%;
 	display:inline-block;
@@ -11,15 +27,16 @@
 	}
 	
 .left-col .grocery-list{
-	border:1px #093 solid;}
+	}
 
 .left-col .grocery-list .food-group{
-	border:1px #000 solid}
+	}
 
 .left-col .grocery-list .food-group .food-items{
-	border:1px #FC0 solid}
+	background-color:#f4f4e9;
+	}
 .left-col .grocery-list .food-group .food-items li{
-	border:1px #000 solid}	
+	}	
 	
 
 
@@ -30,6 +47,6 @@
 	width:48%;
 	display:inline-block;
 	vertical-align:top;
-	background-color:#FFC;}
+	background-color:#e5e5d1;}
 	
 
