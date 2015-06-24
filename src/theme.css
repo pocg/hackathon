@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/* CSS Document */
+.container{
+	width:80%;
+	border:solid 1px #006600;}
+
+.left-col{
+	width:48%;
+	display:inline-block;
+	vertical-align:top;
+	}
+	
+.left-col .grocery-list{
+	border:1px #093 solid;}
+
+.left-col .grocery-list .food-group{
+	border:1px #000 solid}
+
+.left-col .grocery-list .food-group .food-items{
+	border:1px #FC0 solid}
+.left-col .grocery-list .food-group .food-items li{
+	border:1px #000 solid}	
+	
+
+
+	
+	
+
+.right-col{
+	width:48%;
+	display:inline-block;
+	vertical-align:top;
+	background-color:#FFC;}
+	
+
