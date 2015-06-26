@@ -1,3 +1,11 @@
+<nav class="navbar-top" ng-controller="NavbarCtrl">
+  <div class="nav-container-fluid">
+    <div class="navbar-label">
+       <h1>Is what your eating safe?</h1>
+ <h2>Check Your Grocery List</h2>
+
+With the Grocery List Checker, find important food recalls in your area and keep your family safe.
+=======
 ﻿<link rel="Stylesheet" href="..\NavStyle.css" type="text/css" />
 
 <nav class="navbar navbar-static-top navbar-inverse" ng-controller="NavbarCtrl">
@@ -61,18 +69,29 @@
     <!--<div class="navbar-footer">
       <label class="footer" id="footer">Grocery Checker</label>
 
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
-      <ul class="nav navbar-nav">
-        <li class="active"><a ng-href="#">Home</a></li>
-        <li><a ng-href="#">About</a></li>
-        <li><a ng-href="#">Contact</a></li>
+    <div class="top-recalls" id="bs-example-navbar-collapse-6">
+    <div class="recall-label">
+    Top Product Recalls
+    </div>
+    <div class="top-list">
+      <ul class="recall-items">
+        <li><a ng-href="#">Item 1</a></li>
+        <li><a ng-href="#">Item 2</a></li>
+         <li><a ng-href="#">Item 3</a></li> 
+         <li><a ng-href="#">Item 4</a></li>
       </ul>
+      </div>
+   </div>
 
-      <ul class="criteria nav navbar-nav navbar-right">
-        <div class="form-group has-feedback">
+        <div class="nav-search">
             <i class="fa fa-search fa-lg form-control-feedback"></i>
            <input id="criteria" class="form-control search" placeholder="search" type="search" ng-enter="search()" ng-model="criteria" />
         </div>
+        or
+<button>Update List</button>
+<button>Scan QR</button>
+
+ 
       </ul>
     </div>-->
   </div>
