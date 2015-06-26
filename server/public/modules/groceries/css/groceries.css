@@ -1,0 +1,51 @@
+input {
+  margin-right:10px;
+}
+#item, .editItem {
+  width: 200px;
+  display: inline;
+}
+#quantity, .editQuantity {
+  margin-left:10px;
+  width: 60px;
+  text-align: center;
+  display: inline;
+}
+.badge-blue {
+  background-color: #5bc0de;
+}
+.badge-green {
+  background-color: #7ACFB5;
+}
+.badge-orange {
+  background-color: #F89406;
+}
+.badge-wrap {
+  display: inline-block;
+  text-align: center;
+  margin-right:10px;
+  width:60px;
+}
+.badge {
+  float: none;
+  font-size:1.2em;
+}
+.form {
+  margin-bottom:20px;
+}
+.item {
+  display: inline-block;
+  font-size:1.2em;
+  width:200px;
+}
+/* change for mobile */
+.list-group {
+  min-width:395px;
+}
+.list-group-item {
+  white-space: nowrap;
+  height:50px;
+}
+.list-group-item > .badge {
+  float: none;
+}

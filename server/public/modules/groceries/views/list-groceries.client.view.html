@@ -1,0 +1,43 @@
+<section data-ng-controller="GroceriesController" data-ng-init="find()">
+    <div class="page-header">
+        <h1>Grocery list</h1>
+    </div>
+    <form name="form" class="form" ng-show="isAuthenticated">
+        <input type="text" data-ng-model="item" id="item" class="form-control" placeholder="Item" required>
+        x <input type="text" data-ng-model="quantity" id="quantity" class="form-control" placeholder="units" required>
+        <button id="add" class="btn btn-primary" ng-click="create()">
+            <i class="glyphicon glyphicon-plus"></i>
+        </button>
+        <div id="error" data-ng-show="error" class="text-danger">
+            <strong data-ng-bind="error"></strong>
+        </div>
+    </form>
+    <ul class="list-group" ng-show="isAuthenticated">
+        <li data-ng-repeat="grocery in groceries" class="list-group-item"> 
+            <span ng-hide="showEdit($index)">
+                <span class="item" data-ng-bind="grocery.item"></span>
+                <span class="badge-wrap">
+                    <span class="quantity badge badge-green" data-ng-bind="grocery.quantity"></span>
+                </span>
+                <span class="actions pull-right">
+                  <button class="edit-btn btn btn-sm btn-primary" ng-click="edit($index);">
+                    <i class="glyphicon glyphicon-edit"></i>
+                  </button>
+                  <button class="delete btn btn-sm btn-danger" ng-click="remove(grocery);">
+                    <i class="glyphicon glyphicon-trash"></i>
+                  </button>
+                </span>
+            </span>
+            <span ng-show="showEdit($index)" data-ng-show="isOwner(grocery);">
+                <input type="text" class="edit editItem form-control" data-ng-model="grocery.item" data-ng-bind="grocery.item" required>
+                x <input type="text" class="edit editQuantity form-control" data-ng-model="grocery.quantity" data-ng-bind="grocery.quantity" required>
+                <button class="save btn btn-sm btn-primary" ng-click="save(grocery);">
+                    <i class="glyphicon glyphicon-ok"></i>
+                </button>
+                <button class="cancel btn btn-sm btn-danger" ng-click="cancel(true);">
+                    <i class="glyphicon glyphicon-remove"></i>
+                </button>
+            </span>
+        </li>
+    </ul>
+</section>
