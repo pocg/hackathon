@@ -8,12 +8,17 @@
       <label class="login" id="register">Register</label>
     </div>
     <div class="navbar-main">
-        <div>
-            <img alt="Grocery Logo" class="mainImage" src="../assets/images/img_grocerylistchecker_logo_hi-res.png" />
+
+
+            <div class="header-text">
             <h1>Is what you're eating safe?</h1>
             <h2>Check your grocery list</h2>
-        </div>
-        <div><p>With the Grocery List Checker, find important food recalls in your area to keep your family safe.</p></div>
+            <p>With the Grocery List Checker, find important food recalls in your area to keep your family safe.</p>
+          </div>
+          <div class="header-logo">
+            <img alt="Grocery Logo" src="../assets/images/img_grocerylistchecker_logo_low-res.png" />
+          </div>
+
     </div>
 
 
@@ -48,8 +53,8 @@
     <div align="center" padding-top class="navbar-search">
         <input style=" width: 250px;" id="criteria" class="form-control search" placeholder="Enter Items" type="search" ng-enter="search()" ng-model="criteria" />
         <p style="font-size: 14pt;"> OR </p>
-        <input  style="color: black; width: 100px; margin: 0 1%;" id="Upload" type="button" value="Upload List" />
-        <input  style="color: black; width: 100px; margin: 0 1%;" id="Scan" type="button" value="Scan QR" />
+        <input  class="upload" id="Upload" type="button" value="Upload List" />
+        <input   class="scan"id="Scan" type="button" value="Scan QR" />
     </div>
     </div>
 

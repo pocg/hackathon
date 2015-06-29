@@ -9,13 +9,12 @@
 
   <div class="grocery-list">
   <h2 class="groc-list">Your Grocery List</h2>
-        <div class="nav-search">
-            <i class="fa fa-search fa-lg form-control-feedback"></i>
-           <input id="criteria" class="form-control search" placeholder="search" type="search" ng-enter="search()" ng-model="criteria" />
-        </div>
-        or
-<button>Update List</button>
-<button>Scan QR</button>
+<div align="center" padding-top class="main-search">
+        <input style=" width: 250px;" id="criteria" class="form-control search" placeholder="Enter Items" type="search" ng-enter="search()" ng-model="criteria" />
+        <p style="font-size: 14pt;"> OR </p>
+        <input  class="upload" id="Upload" type="button" value="Upload List" />
+        <input  class="scan"id="Scan" type="button" value="Scan QR" />
+    </div>
 
 <div class="food-group">  
  <h3>Dairy</h3> 

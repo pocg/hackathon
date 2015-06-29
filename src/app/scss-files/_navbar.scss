@@ -17,8 +17,7 @@
             }
 }
 
-.navbar-main
-{
+.navbar-main{
     background: #249b40;
     font-family: Avenir;
     color: White;
@@ -27,42 +26,60 @@
      h1{
     font-size:60pt;
     font-family: Avenir;
-    float: left;
-    padding: 0 1.5%;
-    width: 63%
+
+
       }
       h2{
     font-size: 30pt;
     font-family: Avenir;
-    float: left;
-    padding: 0 1.5% 2%;
-    width: 63%
+    // float: left;
+
         }
         p{
     font-size: 18pt;
     font-family: Avenir;
-    clear: both;
-    padding: 0 1.5% 2%;
-}
+
 }
 
+.header-logo{
+    width:20%;
+display:inline-block;
+vertical-align:top;
+}
+.header-text{
+  width:68%;
+  display:inline-block;
+  vertical-align:top;
 
+}
 
-.mainImage
-{
-    float: right;
-    padding: 0 1.5%;
-    width: 37%;
-    height: 250px;
 }
 
 
-.navbar-search
-{
-    background: #249b40;
-    font-family: Avenir;
-    color: White;
-  padding: 2% 0%;
+
+
+.navbar-search{
+              background: #249b40;
+              font-family: Avenir;
+              color: White;
+            padding: 2% 0%;
+
+           .scan, 
+          .upload{  
+          background-color:#fff;
+          border:solid 1px #ccc;
+          border-radius:15px;
+          font-size:1.3em;
+          color:#333;
+          width:140px;
+          padding:10px;
+          margin:20px;
+            &:hover{
+              background-color:#000;
+              color:#fff;
+            }
+          }
+
 }
  
 
@@ -189,7 +206,21 @@ ol {
 
 }
 
+.navbar-main{
 
+
+.header-logo{
+width:100%;
+img{
+  width:50%;
+}
+
+}
+.header-text{
+width:100%;
+}
+
+}
 
 
 

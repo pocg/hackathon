@@ -18,6 +18,30 @@
 		border-bottom: 4px solid #249b40;
 	}
 
+						.main-search
+					{
+					    background: none;
+					    font-family: Avenir;
+					    color: black;
+					  padding: 2% 0%;
+
+					 .scan, 
+					.upload{  
+					background-color:#fff;
+					border:solid 1px #ccc;
+					border-radius:15px;
+					font-size:1.3em;
+					color:#333;
+					width:140px;
+					padding:10px;
+					margin:20px;
+					  &:hover{
+					    background-color:#000;
+					    color:#fff;
+					  }
+					}
+				}
+
 	.alert{
 	background:url(../assets/images//img_alert_icon.png) no-repeat;
 	 background-size: 15px 15px;
@@ -77,7 +101,7 @@
 
 
 }
-@media all and (max-width: 641px) {
+@media all and (max-width: 768px) {
 		.left-col{
 			width:100%;
 		}
