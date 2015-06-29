@@ -1,43 +1,191 @@
-<section data-ng-controller="GroceriesController" data-ng-init="find()">
+<nav class="navbar navbar-static-top navbar-inverse" ng-controller="NavbarCtrl">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <!--<img class="logoImage" src="http://static1.squarespace.com/static/5336dda8e4b0dad6e897b58f/t/54da8d73e4b0a4fe55c30d3b/1434378900106/?format=1500w">
+            <a class="navbar-brand" href="http://www.pocg.com/">-->
+            <!--<span class="glyphicon glyphicon-home"></span> Phase One
+          </a>
+          </img>-->
+            <img alt="Grocery Logo" class="logoImage" src="../assets/images/img_grocerylistchecker_logo_hi-res.png" />
+            <label class="logotitle">GROCERY LIST CHECKER</label>
+            <label class="login" id="login">Login</label>
+            <label class="login" id="login split">|</label>
+            <label class="login" id="register">Register</label>
+        </div>
+        <div class="navbar-main">
+            <div>
+                <img alt="Grocery Logo" class="mainImage" src="../assets/images/img_grocerylistchecker_logo_hi-res.png" />
+                <h1>Is what you're eating safe?</h1>
+                <h2>Check your grocery list</h2>
+            </div>
+            <div><p>With the Grocery List Checker, find important food recalls in your area to keep your family safe.</p></div>
+        </div>
+        <div class="topProducts">
+            <table>
+                <tr>
+                    <td rowspan="2" align="center" style="width: 35%;"><h2>TOP PRODUCT RECALLS</h2></td>
+                    <td><img id="top1" alt="Number 1 Image" src="../assets/images/img_ellipse_1.png" />
+                        <p style="font: 14pt;">ITEM 1</p>
+                        <br />
+                        <p style="font: 12pt;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                    </td>
+                    <td><img id="top3" alt="Number 3 Image" src="../assets/images/img_ellipse_3.png" />
+                        <p>ITEM 3</p>
+                        <br />
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img id="top2" alt="Number 2 Image" src="../assets/images/img_ellipse_2.png" />
+                        <p>ITEM 2</p>
+                        <br />
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                    </td>
+                    <td><img id="top4" alt="Number 4 Image" src="../assets/images/img_ellipse_4.png" />
+                        <p><span font-weight="bold">ITEM 4</span></p>
+                        <br />
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div align="center" padding-top class="navbar-search">
+            <input style=" width: 250px;" id="criteria" class="form-control search" placeholder="Enter Items" type="search" ng-enter="search()" ng-model="criteria" />
+            <form name="form" class="form" ng-show="isAuthenticated">
+                <input type="text" data-ng-model="item" id="item" class="form-control search" placeholder="Enter Item" required>
+                <input type="hidden" data-ng-model="quantity" id="quantity" class="form-control" placeholder="units" required value="1">
+                <button id="add" class="btn btn-primary" ng-click="create()">
+                    <i class="glyphicon glyphicon-plus"></i>
+                </button>
+                <div id="error" data-ng-show="error" class="text-danger">
+                    <strong data-ng-bind="error"></strong>
+                </div>
+            </form>
+
+            <p style="font-size: 14pt;"> OR </p>
+            <input  style="color: black; width: 100px; margin: 0 1%;" id="Upload" type="button" value="Upload List" />
+            <input  style="color: black; width: 100px; margin: 0 1%;" id="Scan" type="button" value="Scan QR" />
+        </div>
+    </div>
+    <!--<div class="navbar-footer">
+      <label class="footer" id="footer">Grocery Checker</label>
+
+    <div class="top-recalls" id="bs-example-navbar-collapse-6">
+    <div class="recall-label">
+    Top Product Recalls
+    </div>
+    <div class="top-list">
+      <ul class="recall-items">
+        <li><a ng-href="#">Item 1</a></li>
+        <li><a ng-href="#">Item 2</a></li>
+         <li><a ng-href="#">Item 3</a></li>
+         <li><a ng-href="#">Item 4</a></li>
+      </ul>
+      </div>
+   </div>
+
+        <div class="nav-search">
+            <i class="fa fa-search fa-lg form-control-feedback"></i>
+           <input id="criteria" class="form-control search" placeholder="search" type="search" ng-enter="search()" ng-model="criteria" />
+        </div>
+        or
+<button>Update List</button>
+<button>Scan QR</button>
+
+
+      </ul>
+    </div>-->
+    </div>
+</nav>
+
+</div>
+
+<div class="container" data-ng-controller="GroceriesController" data-ng-init="find()">
+    <!--<div ng-include="'app/components/navbar/navbar.html'"></div>-->
+
+    <div class="left-col">
+
+        <div class="grocery-list">
+            <h2>Your Grocery List</h2>
+            <li data-ng-repeat="grocery in groceries" class="list-group-item">
+                {{grocery.item}}<a class="remove" ng-click="remove(grocery)">Remove</a></li>
+        </div>
+    </div>
+
+    <div class="right-col">
+        <div class="section">
+            <div class="caption">
+                <h2><strong>RECALL:</strong><br/>Spinach</h2>
+            </div>
+        </div>
+        <div class="section">
+            <div class="map">
+                <img src="" />
+            </div>
+        </div>
+        <div class="section">
+            <div class="substitues">
+                <h3>Suggested Substitues</h3>
+                <ul>
+                    <li>
+                        <div class="part1">Kale</div>
+                        <div class="part2">information</div>
+                    </li>
+                    <li>
+                        <div class="part1">Romain Lettuce</div>
+                        <div class="part2">information</div>
+                    </li>
+                    <li>
+                        <div class="part1">Arugula</div>
+                        <div class="part2">information</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="section">
+                <div class="reason">
+                    <h3>Reason For Recall</h3>
+                    This is some reasoning
+                </div>
+                <div class="origin">
+                    <h3>Recall Origin</h3>
+                    This is some reasoning
+                </div>
+            </div>
+
+        </div>
+        <hr>
+
+        <div class="footer">
+            <p>{{data.disclaimer}}</p>
+
+            <div class="section">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>City</th>
+                        <th>State</th>
+                        <th>Recalling Firm</th>
+                        <th>Reason</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="result in data.results | orderBy:'state'">
+                        <td>{{result.city}}</td>
+                        <td>{{result.state}}</td>
+                        <td>{{result.recalling_firm}}</td>
+                        <td>{{result.reason_for_recall}}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <section >
     <div class="page-header">
         <h1>Grocery list</h1>
     </div>
-    <form name="form" class="form" ng-show="isAuthenticated">
-        <input type="text" data-ng-model="item" id="item" class="form-control" placeholder="Item" required>
-        x <input type="text" data-ng-model="quantity" id="quantity" class="form-control" placeholder="units" required>
-        <button id="add" class="btn btn-primary" ng-click="create()">
-            <i class="glyphicon glyphicon-plus"></i>
-        </button>
-        <div id="error" data-ng-show="error" class="text-danger">
-            <strong data-ng-bind="error"></strong>
-        </div>
-    </form>
-    <ul class="list-group" ng-show="isAuthenticated">
-        <li data-ng-repeat="grocery in groceries" class="list-group-item"> 
-            <span ng-hide="showEdit($index)">
-                <span class="item" data-ng-bind="grocery.item"></span>
-                <span class="badge-wrap">
-                    <span class="quantity badge badge-green" data-ng-bind="grocery.quantity"></span>
-                </span>
-                <span class="actions pull-right">
-                  <button class="edit-btn btn btn-sm btn-primary" ng-click="edit($index);">
-                    <i class="glyphicon glyphicon-edit"></i>
-                  </button>
-                  <button class="delete btn btn-sm btn-danger" ng-click="remove(grocery);">
-                    <i class="glyphicon glyphicon-trash"></i>
-                  </button>
-                </span>
-            </span>
-            <span ng-show="showEdit($index)" data-ng-show="isOwner(grocery);">
-                <input type="text" class="edit editItem form-control" data-ng-model="grocery.item" data-ng-bind="grocery.item" required>
-                x <input type="text" class="edit editQuantity form-control" data-ng-model="grocery.quantity" data-ng-bind="grocery.quantity" required>
-                <button class="save btn btn-sm btn-primary" ng-click="save(grocery);">
-                    <i class="glyphicon glyphicon-ok"></i>
-                </button>
-                <button class="cancel btn btn-sm btn-danger" ng-click="cancel(true);">
-                    <i class="glyphicon glyphicon-remove"></i>
-                </button>
-            </span>
-        </li>
-    </ul>
-</section>
+

@@ -1,0 +1,142 @@
+﻿body
+{
+    /*background: black;   */
+    
+}
+
+.navbar-header
+{
+    background: black;
+    font-family: Avenir;
+    font-size: 12pt;
+    color: White;   
+    width: 900px;
+}
+
+.logoimage
+{
+    float: left;
+    padding-left: 20px;
+}
+
+.logotitle
+{
+    text-align: left;
+    float: left;
+}
+
+.login
+{
+    text-align: right;
+    padding-right: 20px;
+    float: right;
+}
+
+.navbar-main
+{
+    background: #249b40;
+    font-family: Avenir;
+    color: White;
+    width: 900px;
+}
+
+.navbar-main h1
+{
+    font-size:40pt;
+    font-family: Avenir;
+    float: left;
+    margin: 0 1.5%;
+    width: 63%
+}
+
+.navbar-main h2
+{
+    font-size: 24pt;
+    font-family: Avenir;
+    float: left;
+    margin: 0 1.5%;
+    width: 63%
+}
+
+.navbar-main p
+{
+    font-size: 18pt;
+    font-family: Avenir;
+    clear: both;
+    margin: 0 1.5%;
+}
+
+.mainImage
+{
+    float: right;
+    margin: 0 1.5%;
+    width: 30%;
+    height: 150px;
+}
+
+.topProducts
+{
+    background: #b6b696;
+    color: White;
+    font-family: Avenir;
+    width: 900px;
+}
+
+.topProducts table
+{
+    margin: 0 1%;
+    width: 98%;
+    height:150px;
+}
+
+.topProducts h2
+{
+    font-size: 24pt;
+    font-family: Avenir;
+    color: White;
+    border-bottom: 5px solid white;
+    width: 25%;
+    text-align: left;
+}
+
+.topProducts img
+{
+    float: left;
+    margin: 0 1%;
+    width: 30%;
+    vertical-align: middle;
+}
+
+.topProducts p
+{
+    float: right;
+    color: White;
+    width: 50%;
+}
+
+.navbar-search
+{
+    background: #249b40;
+    font-family: Avenir;
+    color: White;
+    width: 900px;
+    align: center;
+}
+
+.navbar-footer
+{
+    background: black;
+    font-family: Avenir;
+    font-size: 12pt;
+    color: White; 
+    height: 40px;  
+    width: 900px;
+    text-align:center;
+    padding-top: 10px;
+}
+
+.navbar-footer button
+{
+    width: 20px;
+    margin: 0 1%;
+}
