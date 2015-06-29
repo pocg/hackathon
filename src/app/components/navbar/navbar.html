@@ -21,7 +21,7 @@
         <div><p>With the Grocery List Checker, find important food recalls in your area to keep your family safe.</p></div>
     </div>
     <div class="topProducts">
-		<table>
+		<!-- <table>
 			<tr>
 				<td rowspan="2" align="center" style="width: 35%;"><h2>TOP PRODUCT RECALLS</h2></td>
 				<td><img id="top1" alt="Number 1 Image" src="../assets/images/img_ellipse_1.png" />
@@ -47,7 +47,24 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
 				</td>
 			</tr>
-		</table>
+		</table> -->
+
+<div class="top-recalls" id="bs-example-navbar-collapse-6">
+    <div class="recall-label">
+    Top Product Recalls
+    </div>
+    <div class="top-list">
+      <ol class="recall-items">
+        <li class="ri1"><a ng-href="#">Item 1</a></li>
+        <li class="ri2"><a ng-href="#">Item 2</a></li>
+         <li class="ri3"><a ng-href="#">Item 3</a></li> 
+         <li class="ri4"><a ng-href="#">Item 4</a></li>
+      </ol>
+      </div>
+   </div>
+
+
+
     </div>
     <div align="center" padding-top class="navbar-search">
         <input style=" width: 250px;" id="criteria" class="form-control search" placeholder="Enter Items" type="search" ng-enter="search()" ng-model="criteria" />
@@ -56,22 +73,10 @@
         <input  style="color: black; width: 100px; margin: 0 1%;" id="Scan" type="button" value="Scan QR" />
     </div>
     </div>
-    <!--<div class="navbar-footer">
+    <div class="navbar-footer">
       <label class="footer" id="footer">Grocery Checker</label>
 
-    <div class="top-recalls" id="bs-example-navbar-collapse-6">
-    <div class="recall-label">
-    Top Product Recalls
-    </div>
-    <div class="top-list">
-      <ul class="recall-items">
-        <li><a ng-href="#">Item 1</a></li>
-        <li><a ng-href="#">Item 2</a></li>
-         <li><a ng-href="#">Item 3</a></li> 
-         <li><a ng-href="#">Item 4</a></li>
-      </ul>
-      </div>
-   </div>
+    
 
         <div class="nav-search">
             <i class="fa fa-search fa-lg form-control-feedback"></i>
@@ -83,7 +88,7 @@
 
  
       </ul>
-    </div>-->
+    </div>
   </div>
 </nav>
 

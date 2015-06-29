@@ -293,6 +293,24 @@ img.logoImage {
 }
 
 
+.top-recalls{
+
+     .ri1 {
+      list-style-image: url('../assets/images/img_ellipse_1.png');
+  }
+       .ri2 {
+      list-style-image: url('../assets/images/img_ellipse_2.png');
+  }
+       .ri3 {
+      list-style-image: url('../assets/images/img_ellipse_3.png');
+  }
+       .ri4 {
+      list-style-image: url('../assets/images/img_ellipse_4.png');
+  }
+}
+
+
+
 @media all and (max-width: 961px) {
 .navbar-search
 {
