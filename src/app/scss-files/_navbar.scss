@@ -1,50 +1,20 @@
 
-
-
-.criteria{
-  padding-top: 10px;
-  padding-right: 5px;
-}
-
-input.search {
-  text-indent: 15px;
-}
-0
-.fa-search {
-  position: absolute;
-  top: 10px;
-  left: -5px;
-}
-
-img.logoImage {
-  max-height: 20px;
-  width: auto;
-  max-width: 100%;
-  float: left;
-  padding-right: 5px;
-  padding-left: 30px;
-}
-
-.navbar-header
-{
+.navbar-header{
     background: black;
       font-family: Avenir;
     font-size: 12pt;
     color: White;   
     width: 100%;
-}
+        .logotitle{
+            text-align: left;
+            float: left;
+        }
 
-.logotitle
-{
-    text-align: left;
-    float: left;
-}
-
-.login
-{
-    text-align: right;
-    padding-right: 20px;
-    float: right;
+        .login{
+            text-align: right;
+            padding-right: 20px;
+            float: right;
+            }
 }
 
 .navbar-main
@@ -53,6 +23,7 @@ img.logoImage {
     font-family: Avenir;
     color: White;
     width: 100%;
+    margin-bottom:0px;
      h1{
     font-size:60pt;
     font-family: Avenir;
@@ -77,10 +48,6 @@ img.logoImage {
 
 
 
-
-
-
-
 .mainImage
 {
     float: right;
@@ -89,47 +56,6 @@ img.logoImage {
     height: 250px;
 }
 
-.topProducts
-{
-    background: #b6b696;
-    color: White;
-    font-family: Avenir;
-    width: 100%;
-}
-
-.topProducts table
-{
-    background: #b6b696;
-    width: 98%;
-    height:150px;
-}
-
-.topProducts h2
-{
-    font-size: 24pt;
-    font-family: lucidia;
-    color: White;
-    border-bottom: 5px solid white;
-    width: 40%;
-    text-align: left;
-}
-
-.topProducts img
-{
-    float: left;
-    padding: 0 5%;
-  padding-top: 5%;
-    width: auto;
-  height: 65%;
-    vertical-align: middle;
-}
-
-.topProducts p
-{
-    float: left;
-    color: White;
-    width: 50%;
-}
 
 .navbar-search
 {
@@ -139,25 +65,9 @@ img.logoImage {
   padding: 2% 0%;
 }
  
-.browsehappy {
-  padding: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
 
-.thumbnail {
-  height: 200px;
 
-  img.pull-right {
-    width: 50px;
-  }
-}
 
-.criteria{
-  padding-top: 10px;
-  padding-right: 5px;
-}
 
 input.search {
   text-indent: 15px;
@@ -178,111 +88,6 @@ img.logoImage {
   padding-left: 30px;
 }
 
-.navbar-header
-{
-    background: black;
-    font-family: Avenir;
-    font-size: 12pt;
-    color: White;   
-    width: 100%;
-}
-
-.logotitle
-{
-    text-align: left;
-    float: left;
-}
-
-.login
-{
-    text-align: right;
-    padding-right: 20px;
-    float: right;
-}
-
-.navbar-main
-{
-    background: #249b40;
-    font-family: Avenir;
-    color: White;
-    width: 100%;
-}
-
-.navbar-main h1
-{
-    font-size:60pt;
-    font-family: Avenir;
-    float: left;
-    padding: 0 1.5%;
-    width: 63%
-}
-
-.navbar-main h2
-{
-    font-size: 30pt;
-    font-family: Avenir;
-    float: left;
-    padding: 0 1.5% 2%;
-    width: 63%
-}
-
-.navbar-main p
-{
-    font-size: 18pt;
-    font-family: Avenir;
-    clear: both;
-    padding: 0 1.5% 2%;
-}
-
-.mainImage
-{
-    float: right;
-    padding: 0 1.5%;
-    width: 37%;
-    height: 250px;
-}
-
-.topProducts
-{
-    background: #b6b696;
-    color: White;
-    font-family: Avenir;
-    width: 100%;
-}
-
-.topProducts table
-{
-    background: #b6b696;
-    width: 98%;
-    height:150px;
-}
-
-.topProducts h2
-{
-    font-size: 24pt;
-    font-family: lucidia;
-    color: White;
-    border-bottom: 5px solid white;
-    width: 40%;
-    text-align: left;
-}
-
-.topProducts img
-{
-    float: left;
-    padding: 0 5%;
-  padding-top: 5%;
-    width: auto;
-  height: 65%;
-    vertical-align: middle;
-}
-
-.topProducts p
-{
-    float: left;
-    color: White;
-    width: 50%;
-}
 
 .navbar-search
 {
@@ -294,58 +99,133 @@ img.logoImage {
 
 
 .top-recalls{
+ background: #b6b696;
 
-     .ri1 {
-      list-style-image: url('../assets/images/img_ellipse_1.png');
-  }
-       .ri2 {
-      list-style-image: url('../assets/images/img_ellipse_2.png');
-  }
-       .ri3 {
-      list-style-image: url('../assets/images/img_ellipse_3.png');
-  }
-       .ri4 {
-      list-style-image: url('../assets/images/img_ellipse_4.png');
-  }
+        .recall-label{
+            display:inline-block;
+                vertical-align: middle;
+                padding:20px;
+                width:30%;
+                overflow:visible;
+              h2{
+                width:250px;
+              font-size: 32pt;
+              color: White;
+              border-bottom: 5px solid white;
+              text-transform: uppercase;
+              text-align: left;
+              margin-left:30px;
+              margin-right:30px;
+          }
+}
+
+
+.top-list{
+    display:inline-block;
+    vertical-align: middle;
+    width:69%;
+ol {
+  color:#fff;
+    display: block;
+    padding: 0 0 0 26px;
+    list-style: none;
+    overflow: hidden;
+    counter-reset: numList;
+    li {
+        width: 230px;
+        margin-right: 80px;
+         margin-bottom: 20px;
+        float: left;
+        position: relative;
+        left:50px;
+              a{
+        color:#fff;
+        font-size:1.2em;
+      }
+    }
+
+ li:before {
+    counter-increment: numList;
+    content: counter(numList);  
+    position: absolute;
+    left: -70px;
+    font: 40px sans-serif;
+    text-align: center;
+    color: #fff;
+    width: 50px; height: 50px;
+    border:1px solid #fff;   
+    -moz-border-radius: 999px;
+    border-radius: 999px
+          }
+      }
+
+}
+
 }
 
 
 
 @media all and (max-width: 961px) {
-.navbar-search
-{
-    background: #000;
-    font-family: Avenir;
-    color: White;
-  padding: 2% 0%;
+  .top-recalls{
+ background: #b6b696;
+
+        .recall-label{
+            display:inline-block;
+                vertical-align: middle;
+                width:100%;
+
+              h2{
+
+          }
 }
+
+
+.top-list{
+    display:inline-block;
+    vertical-align: middle;
+    width:100%;
+
+}
+
+}
+
+
+
+
+
+
 }
 @media all and (max-width: 641px) {
-.navbar-search
-{
-    background: #FC0;
-    font-family: Avenir;
-    color: White;
-  padding: 2% 0%;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 @media all and (max-width: 481px) {
-.navbar-search
-{
-    background: #fff;
-    font-family: Avenir;
-    color: White;
-  padding: 2% 0%;
-}
 }
 @media all and (max-width: 320px) {
-.navbar-search
-{
-    background: #000;
-    font-family: Avenir;
-    color: White;
-  padding: 2% 0%;
-}
+
+
 }
 
 

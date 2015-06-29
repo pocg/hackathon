@@ -5,8 +5,18 @@
  
 <div class="left-col">
 
+  
+
   <div class="grocery-list">
   <h2 class="groc-list">Your Grocery List</h2>
+        <div class="nav-search">
+            <i class="fa fa-search fa-lg form-control-feedback"></i>
+           <input id="criteria" class="form-control search" placeholder="search" type="search" ng-enter="search()" ng-model="criteria" />
+        </div>
+        or
+<button>Update List</button>
+<button>Scan QR</button>
+
 <div class="food-group">  
  <h3>Dairy</h3> 
 <ul class="list-group">
@@ -77,8 +87,8 @@
   
 </div>
   <hr>
-
-  <div class="footer">
+<!-- We have soem token here from Eric's backend -->
+  <div class="raw-data">
     <p>{{data.disclaimer}}</p>
     
     <div class="section">
@@ -104,3 +114,4 @@
   </div>
 
 </div>
+<div ng-include="'app/components/footer/footer.html'"></div>

@@ -1,11 +1,6 @@
 <nav class="navbar navbar-static-top navbar-inverse" ng-controller="NavbarCtrl">
   <div class="container-fluid">
     <div class="navbar-header">
-      <!--<img class="logoImage" src="http://static1.squarespace.com/static/5336dda8e4b0dad6e897b58f/t/54da8d73e4b0a4fe55c30d3b/1434378900106/?format=1500w">
-      <a class="navbar-brand" href="http://www.pocg.com/">-->
-        <!--<span class="glyphicon glyphicon-home"></span> Phase One
-      </a>
-      </img>-->
       <img alt="Grocery Logo" class="logoImage" src="../assets/images/img_grocerylistchecker_logo_hi-res.png" />
       <label class="logotitle">GROCERY LIST CHECKER</label>
       <label class="login" id="login">Login</label>
@@ -20,51 +15,35 @@
         </div>
         <div><p>With the Grocery List Checker, find important food recalls in your area to keep your family safe.</p></div>
     </div>
-    <div class="topProducts">
-		<!-- <table>
-			<tr>
-				<td rowspan="2" align="center" style="width: 35%;"><h2>TOP PRODUCT RECALLS</h2></td>
-				<td><img id="top1" alt="Number 1 Image" src="../assets/images/img_ellipse_1.png" />
-					<p style="font: 14pt;">ITEM 1</p>
-					<br />
-					<p style="font: 12pt;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-				</td>
-				<td><img id="top3" alt="Number 3 Image" src="../assets/images/img_ellipse_3.png" />
-					<p>ITEM 3</p>
-					<br />
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-				</td>
-			</tr>
-			<tr>
-				<td><img id="top2" alt="Number 2 Image" src="../assets/images/img_ellipse_2.png" />
-					<p>ITEM 2</p>
-					<br />
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-				</td>
-				<td><img id="top4" alt="Number 4 Image" src="../assets/images/img_ellipse_4.png" />
-					<p><span font-weight="bold">ITEM 4</span></p>
-					<br />
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-				</td>
-			</tr>
-		</table> -->
 
-<div class="top-recalls" id="bs-example-navbar-collapse-6">
+
+
+<div class="top-recalls" >
     <div class="recall-label">
-    Top Product Recalls
+    <h2>Top Product Recalls</h2>
     </div>
     <div class="top-list">
       <ol class="recall-items">
-        <li class="ri1"><a ng-href="#">Item 1</a></li>
-        <li class="ri2"><a ng-href="#">Item 2</a></li>
-         <li class="ri3"><a ng-href="#">Item 3</a></li> 
-         <li class="ri4"><a ng-href="#">Item 4</a></li>
+        <li class="ri">
+          <div class="item-name"><a ng-href="#">Item 1</a></div>
+          <div class="item-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
+        </li>
+        <li class="ri">
+          <div class="item-name"><a ng-href="#">Item 2</a></div>
+          <div class="item-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
+
+        </li>
+         <li class="ri">
+          <div class="item-name"><a ng-href="#">Item 3</a></div>
+          <div class="item-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
+        </li> 
+         <li class="ri">
+          <div class="item-name"><a ng-href="#">Item 3</a></div>
+          <div class="item-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
+        </li>
       </ol>
       </div>
    </div>
-
-
-
     </div>
     <div align="center" padding-top class="navbar-search">
         <input style=" width: 250px;" id="criteria" class="form-control search" placeholder="Enter Items" type="search" ng-enter="search()" ng-model="criteria" />
@@ -73,23 +52,16 @@
         <input  style="color: black; width: 100px; margin: 0 1%;" id="Scan" type="button" value="Scan QR" />
     </div>
     </div>
-    <div class="navbar-footer">
-      <label class="footer" id="footer">Grocery Checker</label>
+
 
     
 
-        <div class="nav-search">
-            <i class="fa fa-search fa-lg form-control-feedback"></i>
-           <input id="criteria" class="form-control search" placeholder="search" type="search" ng-enter="search()" ng-model="criteria" />
-        </div>
-        or
-<button>Update List</button>
-<button>Scan QR</button>
+
 
  
       </ul>
     </div>
-  </div>
+
 </nav>
 
 </div>
