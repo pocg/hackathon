@@ -1,15 +1,85 @@
+   
+
 <div class="container">
+<div ng-include="'app/components/navbar/navbar.html'"></div>
+ 
+<div class="left-col">
 
-  <div ng-include="'app/components/navbar/navbar.html'"></div>
-
-  <div class="row">
+  <div class="grocery-list">
+  <h2>Your Grocery List</h2>
+<div class="food-group">  
+ <h3>Dairy</h3> 
+<ul class="food-items">
+  <li>Eggs <a class="remove" href="/">Remove</a></li>
+  <li>Milk<a class="remove" href="/">Remove</a></li>
+   <li>Butter<a class="remove" href="/">Remove</a></li>
+  </ul>
+  </div>
+<div class="food-group">  
+   <h3>Produce</h3> 
+<ul class="food-items">
+  <li>Spinich<a class="remove" href="/">Remove</a></li>
+  <li>Brocoli<a class="remove" href="/">Remove</a></li>
+  </ul>
+  </div>z
+ <div class="food-group">   
+     <h3>Meat</h3> 
+<ul class="food-items">
+  <li>Uncured Pork Bacon<a class="remove" href="/">Remove</a></li>
+  <li>Beef<a class="remove" href="/">Remove</a></li>
+   <li>Chicken<a class="remove" href="/">Remove</a></li>
+  </ul>
+    </div>
+  </div>
+</div>
+  
+<div class="right-col">
+  <div class="section">
         <div class="caption">
-          <h3>Phase One Open FDA</h3>
-          <p>{{data.disclaimer}}</p>
+          <h2><strong>RECALL:</strong><br/>Spinach</h2>
         </div>
   </div>
+  <div class="section">
+     <div class="map">
+     <img src="" />
+     </div>
+  </div>
+    <div class="section">
+     <div class="substitues">
+     <h3>Suggested Substitues</h3>
+    <ul>
+    <li>
+    <div class="part1">Kale</div>
+    	<div class="part2">information</div> 
+    </li>
+    <li>
+    <div class="part1">Romain Lettuce</div>
+    	<div class="part2">information</div> 
+    </li>
+    <li>
+    <div class="part1">Arugula</div>
+    	<div class="part2">information</div> 
+    </li>
+    </ul>
+     </div>
+       <div class="section">
+     <div class="reason">
+     <h3>Reason For Recall</h3>
+     This is some reasoning
+     </div> 
+     <div class="origin">
+     <h3>Recall Origin</h3>
+     This is some reasoning
+     </div> 
+  </div>
+  
+</div>
+  <hr>
 
-  <div class="row">
+  <div class="footer">
+    <p>{{data.disclaimer}}</p>
+    
+    <div class="section">
     <table class="table table-striped">
       <thead>
       <tr>
@@ -29,10 +99,6 @@
       </tbody>
     </table>
   </div>
-
-  <hr>
-
-  <div class="footer">
   </div>
 
 </div>

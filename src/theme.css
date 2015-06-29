@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/* CSS Document */
+.container{
+	width:80%;
+	}
+
+.nav-container-fluid{
+	background-color:#249b40;;
+	color:#fff;
+	font-family:Nunito;}
+.navbar-label h1{
+	font-size:62pt;
+	}
+.navbar-label h2{
+	font-size:30pt;
+	}
+	.navbar-label h3{
+	font-size:60pt;
+	}	
+
+.nav-search{
+	
+	}	
+
+.top-recalls{
+	background-color:#b6b696;}	
+	
+		
+
+.left-col{
+	width:48%;
+	display:inline-block;
+	vertical-align:top;
+	}
+	
+.left-col .grocery-list{
+	}
+
+.left-col .grocery-list .food-group{
+	}
+
+.left-col .grocery-list .food-group .food-items{
+	background-color:#f4f4e9;
+	}
+.left-col .grocery-list .food-group .food-items li{
+	}	
+	
+
+
+	
+	
+
+.right-col{
+	width:48%;
+	display:inline-block;
+	vertical-align:top;
+	background-color:#e5e5d1;}
+	
+
