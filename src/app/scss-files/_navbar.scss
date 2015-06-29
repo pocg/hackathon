@@ -1,0 +1,342 @@
+
+
+
+.criteria{
+  padding-top: 10px;
+  padding-right: 5px;
+}
+
+input.search {
+  text-indent: 15px;
+}
+0
+.fa-search {
+  position: absolute;
+  top: 10px;
+  left: -5px;
+}
+
+img.logoImage {
+  max-height: 20px;
+  width: auto;
+  max-width: 100%;
+  float: left;
+  padding-right: 5px;
+  padding-left: 30px;
+}
+
+.navbar-header
+{
+    background: black;
+      font-family: Avenir;
+    font-size: 12pt;
+    color: White;   
+    width: 100%;
+}
+
+.logotitle
+{
+    text-align: left;
+    float: left;
+}
+
+.login
+{
+    text-align: right;
+    padding-right: 20px;
+    float: right;
+}
+
+.navbar-main
+{
+    background: #249b40;
+    font-family: Avenir;
+    color: White;
+    width: 100%;
+     h1{
+    font-size:60pt;
+    font-family: Avenir;
+    float: left;
+    padding: 0 1.5%;
+    width: 63%
+      }
+      h2{
+    font-size: 30pt;
+    font-family: Avenir;
+    float: left;
+    padding: 0 1.5% 2%;
+    width: 63%
+        }
+        p{
+    font-size: 18pt;
+    font-family: Avenir;
+    clear: both;
+    padding: 0 1.5% 2%;
+}
+}
+
+
+
+
+
+
+
+.mainImage
+{
+    float: right;
+    padding: 0 1.5%;
+    width: 37%;
+    height: 250px;
+}
+
+.topProducts
+{
+    background: #b6b696;
+    color: White;
+    font-family: Avenir;
+    width: 100%;
+}
+
+.topProducts table
+{
+    background: #b6b696;
+    width: 98%;
+    height:150px;
+}
+
+.topProducts h2
+{
+    font-size: 24pt;
+    font-family: lucidia;
+    color: White;
+    border-bottom: 5px solid white;
+    width: 40%;
+    text-align: left;
+}
+
+.topProducts img
+{
+    float: left;
+    padding: 0 5%;
+  padding-top: 5%;
+    width: auto;
+  height: 65%;
+    vertical-align: middle;
+}
+
+.topProducts p
+{
+    float: left;
+    color: White;
+    width: 50%;
+}
+
+.navbar-search
+{
+    background: #249b40;
+    font-family: Avenir;
+    color: White;
+  padding: 2% 0%;
+}
+ 
+.browsehappy {
+  padding: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.thumbnail {
+  height: 200px;
+
+  img.pull-right {
+    width: 50px;
+  }
+}
+
+.criteria{
+  padding-top: 10px;
+  padding-right: 5px;
+}
+
+input.search {
+  text-indent: 15px;
+}
+
+.fa-search {
+  position: absolute;
+  top: 10px;
+  left: -5px;
+}
+
+img.logoImage {
+  max-height: 20px;
+  width: auto;
+  max-width: 100%;
+  float: left;
+  padding-right: 5px;
+  padding-left: 30px;
+}
+
+.navbar-header
+{
+    background: black;
+    font-family: Avenir;
+    font-size: 12pt;
+    color: White;   
+    width: 100%;
+}
+
+.logotitle
+{
+    text-align: left;
+    float: left;
+}
+
+.login
+{
+    text-align: right;
+    padding-right: 20px;
+    float: right;
+}
+
+.navbar-main
+{
+    background: #249b40;
+    font-family: Avenir;
+    color: White;
+    width: 100%;
+}
+
+.navbar-main h1
+{
+    font-size:60pt;
+    font-family: Avenir;
+    float: left;
+    padding: 0 1.5%;
+    width: 63%
+}
+
+.navbar-main h2
+{
+    font-size: 30pt;
+    font-family: Avenir;
+    float: left;
+    padding: 0 1.5% 2%;
+    width: 63%
+}
+
+.navbar-main p
+{
+    font-size: 18pt;
+    font-family: Avenir;
+    clear: both;
+    padding: 0 1.5% 2%;
+}
+
+.mainImage
+{
+    float: right;
+    padding: 0 1.5%;
+    width: 37%;
+    height: 250px;
+}
+
+.topProducts
+{
+    background: #b6b696;
+    color: White;
+    font-family: Avenir;
+    width: 100%;
+}
+
+.topProducts table
+{
+    background: #b6b696;
+    width: 98%;
+    height:150px;
+}
+
+.topProducts h2
+{
+    font-size: 24pt;
+    font-family: lucidia;
+    color: White;
+    border-bottom: 5px solid white;
+    width: 40%;
+    text-align: left;
+}
+
+.topProducts img
+{
+    float: left;
+    padding: 0 5%;
+  padding-top: 5%;
+    width: auto;
+  height: 65%;
+    vertical-align: middle;
+}
+
+.topProducts p
+{
+    float: left;
+    color: White;
+    width: 50%;
+}
+
+.navbar-search
+{
+    background: #249b40;
+    font-family: Avenir;
+    color: White;
+  padding: 2% 0%;
+}
+
+
+@media all and (max-width: 961px) {
+.navbar-search
+{
+    background: #000;
+    font-family: Avenir;
+    color: White;
+  padding: 2% 0%;
+}
+}
+@media all and (max-width: 641px) {
+.navbar-search
+{
+    background: #FC0;
+    font-family: Avenir;
+    color: White;
+  padding: 2% 0%;
+}
+}
+@media all and (max-width: 481px) {
+.navbar-search
+{
+    background: #fff;
+    font-family: Avenir;
+    color: White;
+  padding: 2% 0%;
+}
+}
+@media all and (max-width: 320px) {
+.navbar-search
+{
+    background: #000;
+    font-family: Avenir;
+    color: White;
+  padding: 2% 0%;
+}
+}
+
+
+/* Do not remove this comments bellow. It's the markers used by gulp-inject to inject
+   all your sass files automatically */
+// injector
+// endinjector
+
+/* Do not remove this comments bellow. It's the markers used by gulp-inject to inject
+   all your sass files automatically */
+// injector
+// endinjector
