@@ -1,16 +1,18 @@
 <nav class="navbar navbar-static-top navbar-inverse" ng-controller="NavbarCtrl">
-  <div class="container-fluid">
+  <!--<div class="container-fluid">-->
     <div class="navbar-header">
       <img alt="Grocery Logo" class="logoImage" src="../assets/images/img_grocerylistchecker_logo_hi-res.png" />
       <label class="logotitle">GROCERY LIST CHECKER</label>
-      <label class="login" id="login">Login</label>
-      <label class="login" id="login split">|</label>
-      <label class="login" id="register">Register</label>
+      <div style="float: right;">
+		<a class="login" id="register">Register</a>
+		<label class="login" id="login split">|</label>
+		<a class="login" id="login">Login</a>
+	   </div>
     </div>
     <div class="navbar-main">
 
 
-            <div class="header-text">
+          <div class="header-text">
             <h1>Is what you're eating safe?</h1>
             <h2>Check your grocery list</h2>
             <p>With the Grocery List Checker, find important food recalls in your area to keep your family safe.</p>
@@ -18,6 +20,9 @@
           <div class="header-logo">
             <img alt="Grocery Logo" src="../assets/images/img_grocerylistchecker_logo_low-res.png" />
           </div>
+		  <!-- <div>
+		  <p>With the Grocery List Checker, find important food recalls in your area to keep your family safe.</p>
+          </div> -->
 
     </div>
 
@@ -30,27 +35,27 @@
     <div class="top-list">
       <ol class="recall-items">
         <li class="ri">
-          <div class="item-name"><a ng-href="#">Item 1</a></div>
+          <div class="item-name"><a ng-href="#">ITEM 1</a></div>
           <div class="item-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
         </li>
         <li class="ri">
-          <div class="item-name"><a ng-href="#">Item 2</a></div>
+          <div class="item-name"><a ng-href="#">ITEM 2</a></div>
           <div class="item-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
 
         </li>
          <li class="ri">
-          <div class="item-name"><a ng-href="#">Item 3</a></div>
+          <div class="item-name"><a ng-href="#">ITEM 3</a></div>
           <div class="item-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
         </li> 
          <li class="ri">
-          <div class="item-name"><a ng-href="#">Item 3</a></div>
+          <div class="item-name"><a ng-href="#">ITEM 4</a></div>
           <div class="item-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
         </li>
       </ol>
       </div>
-   </div>
+   <!-- </div> -->
     </div>
-    <div align="center" padding-top class="navbar-search">
+    <div align="center" class="navbar-search">
         <input style=" width: 250px;" id="criteria" class="form-control search" placeholder="Enter Items" type="search" ng-enter="search()" ng-model="criteria" />
         <p style="font-size: 14pt;"> OR </p>
         <input  class="upload" id="Upload" type="button" value="Upload List" />
