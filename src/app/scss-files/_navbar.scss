@@ -26,7 +26,7 @@
     font-family: Avenir;
     color: White;
     //width: 100%;
-    padding-bottom:0px;
+    padding:20px;
      h1{
     font-size:60pt;
     font-family: Avenir;
@@ -223,7 +223,22 @@ img{
 .header-text{
 width:100%;
 }
+     h1{
+    font-size:30pt;
+    font-family: Avenir;
+    padding: 5 5px;
+      }
+      h2{
+    font-size: 15pt;
+    font-family: Avenir;
+    // float: left;
 
+        }
+        p{
+    font-size: 10pt;
+    font-family: Avenir;
+
+  }
 }
 
 
