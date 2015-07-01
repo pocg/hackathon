@@ -17,13 +17,12 @@
     </div>
 
 <div class="food-group">  
- <h3>Dairy</h3> 
-<ul class="list-group">
-  <li class="list-group-item">Eggs <a class="remove" href="/">Remove</a></li>
-  <li class="list-group-item">Milk<a class="remove" href="/">Remove</a></li>
-   <li class="list-group-item">Butter<a class="remove" href="/">Remove</a></li>
-  </ul>
-  </div>
+ <h3>Dairy</h3>
+ <ul class="list-group">
+   <li class="list-group-item" ng-repeat="product in dairy | orderBy:'item'"
+          >{{product.item}} <a class="remove" href="/">Remove</a></li>
+ </ul>
+</div>
 <div class="food-group">  
    <h3>Produce</h3> 
 <ul class="list-group">

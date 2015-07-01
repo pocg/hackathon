@@ -10,5 +10,6 @@
 angular.module('hackathon2015')
   .service('config', function search() {
      //this.baseURL = 'https://api.fda.gov/drug/enforcement.json?api_key=94kv4aUK7gBxZZHTYnCVYKlUh8HNxwDYCpzpxOp1&';
-    this.baseURL = 'https://api.fda.gov/drug/enforcement.json?';
+    this.baseURL = 'https://api.fda.gov/food/enforcement.json?';
+    this.baseFGURL = 'http://api.nal.usda.gov/ndb/search/?';
   });
