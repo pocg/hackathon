@@ -5,29 +5,38 @@
  
 <div class="left-col">
 
+  
+
   <div class="grocery-list">
-  <h2>Your Grocery List</h2>
+  <h2 class="groc-list">Your Grocery List</h2>
+<div align="center" padding-top class="main-search">
+        <input style=" width: 250px;" id="criteria" class="form-control search" placeholder="Enter Items" type="search" ng-enter="search()" ng-model="criteria" />
+        <p style="font-size: 14pt;"> OR </p>
+        <input  class="upload" id="Upload" type="button" value="Upload List" />
+        <input  class="scan"id="Scan" type="button" value="Scan QR" />
+    </div>
+
 <div class="food-group">  
  <h3>Dairy</h3> 
-<ul class="food-items">
-  <li>Eggs <a class="remove" href="/">Remove</a></li>
-  <li>Milk<a class="remove" href="/">Remove</a></li>
-   <li>Butter<a class="remove" href="/">Remove</a></li>
+<ul class="list-group">
+  <li class="list-group-item">Eggs <a class="remove" href="/">Remove</a></li>
+  <li class="list-group-item">Milk<a class="remove" href="/">Remove</a></li>
+   <li class="list-group-item">Butter<a class="remove" href="/">Remove</a></li>
   </ul>
   </div>
 <div class="food-group">  
    <h3>Produce</h3> 
-<ul class="food-items">
-  <li>Spinich<a class="remove" href="/">Remove</a></li>
-  <li>Brocoli<a class="remove" href="/">Remove</a></li>
+<ul class="list-group">
+  <li class="list-group-item alert">Spinich<a class="remove" href="/">Remove</a></li>
+  <li class="list-group-item">Brocoli<a class="remove" href="/">Remove</a></li>
   </ul>
-  </div>z
+  </div>
  <div class="food-group">   
      <h3>Meat</h3> 
-<ul class="food-items">
-  <li>Uncured Pork Bacon<a class="remove" href="/">Remove</a></li>
-  <li>Beef<a class="remove" href="/">Remove</a></li>
-   <li>Chicken<a class="remove" href="/">Remove</a></li>
+<ul class="list-group">
+  <li class="list-group-item">Uncured Pork Bacon<a class="remove" href="/">Remove</a></li>
+  <li class="list-group-item">Beef<a class="remove" href="/">Remove</a></li>
+   <li class="list-group-item alert">Chicken<a class="remove" href="/">Remove</a></li>
   </ul>
     </div>
   </div>
@@ -35,8 +44,10 @@
   
 <div class="right-col">
   <div class="section">
-        <div class="caption">
-          <h2><strong>RECALL:</strong><br/>Spinach</h2>
+        <div class="recall-caption">
+           <img class ="alert-icon" src="../assets/images//img_alert_icon.png" alt="alert icon">
+          <h2 class = "caption-text"><strong>RECALL:</strong><br/>Spinach</h2>
+
         </div>
   </div>
   <div class="section">
@@ -45,7 +56,7 @@
      </div>
   </div>
     <div class="section">
-     <div class="substitues">
+     <div class="substitutes">
      <h3>Suggested Substitues</h3>
     <ul>
     <li>
@@ -75,8 +86,8 @@
   
 </div>
   <hr>
-
-  <div class="footer">
+<!-- We have soem token here from Eric's backend -->
+  <div class="raw-data">
     <p>{{data.disclaimer}}</p>
     
     <div class="section">
@@ -102,3 +113,4 @@
   </div>
 
 </div>
+<div ng-include="'app/components/footer/footer.html'"></div>

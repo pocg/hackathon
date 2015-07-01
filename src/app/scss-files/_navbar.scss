@@ -1,0 +1,290 @@
+@font-face {
+	font-family: Avenir;
+	src: url("../assets/font/Avenir.otf");
+}
+.navbar-header{
+    background: black;
+    font-family: Avenir;
+    font-size: 12pt;
+    color: White;   
+    width: 100%;
+	padding-top: 5px;
+        .logotitle{
+            text-align: left;
+            float: left;
+        }
+
+        .login{
+            padding-right: 20px;
+            //float: right;
+			color: white;
+            }
+}
+
+.navbar-main{
+    background: #249b40;
+    font-family: Avenir;
+    color: White;
+    //width: 100%;
+    padding:20px;
+     h1{
+    font-size:60pt;
+    font-family: Avenir;
+		padding: 5 5px;
+      }
+      h2{
+    font-size: 30pt;
+    font-family: Avenir;
+    // float: left;
+
+        }
+        p{
+    font-size: 18pt;
+    font-family: Avenir;
+
+	}
+
+	.header-logo{
+		width:20%;
+	display:inline-block;
+	vertical-align:top;
+	align: right;
+	}
+	.header-text{
+	  width:68%;
+	  display:inline-block;
+	  vertical-align:top;
+		padding: 5 5%;
+	}
+
+}
+
+
+
+
+.navbar-search{
+              background: #249b40;
+              font-family: Avenir;
+              color: White;
+            padding: 2% 0%;
+
+           .scan, 
+          .upload{  
+          background-color:#fff;
+          border:solid 1px #ccc;
+          border-radius:15px;
+          font-size:1.3em;
+          color:#333;
+          width:140px;
+          padding:10px;
+          margin:20px;
+            &:hover{
+              background-color:#000;
+              color:#fff;
+            }
+          }
+
+}
+ 
+
+
+
+
+input.search {
+  text-indent: 15px;
+}
+
+.fa-search {
+  position: absolute;
+  top: 10px;
+  left: -5px;
+}
+
+img.logoImage {
+  max-height: 20px;
+  width: auto;
+  max-width: 100%;
+  float: left;
+  padding-right: 5px;
+  padding-left: 30px;
+}
+
+
+.navbar-search
+{
+    background: #249b40;
+    font-family: Avenir;
+    color: White;
+  padding: 2% 0%;
+}
+
+
+.top-recalls{
+ background: #b6b696;
+
+        .recall-label{
+            display:inline-block;
+                vertical-align: middle;
+                padding:20px;
+                width:30%;
+                overflow:visible;
+              h2{
+                width:250px;
+              font-size: 32pt;
+              color: White;
+              border-bottom: 5px solid white;
+              text-transform: uppercase;
+              text-align: left;
+              margin-left:30px;
+              margin-right:30px;
+          }
+}
+
+
+.top-list{
+    display:inline-block;
+    vertical-align: middle;
+    width:69%;
+ol {
+  color:#fff;
+    display: block;
+    padding: 0 0 0 26px;
+    list-style: none;
+    overflow: hidden;
+    counter-reset: numList;
+    li {
+        width: 230px;
+        margin-right: 80px;
+         margin-bottom: 20px;
+        float: left;
+        position: relative;
+        left:50px;
+              a{
+        color:#fff;
+        font-size:1.2em;
+      }
+    }
+
+ li:before {
+    counter-increment: numList;
+    content: counter(numList);  
+    position: absolute;
+    left: -70px;
+    font: 40px sans-serif;
+    text-align: center;
+    color: #fff;
+    width: 50px; height: 50px;
+    border:1px solid #fff;   
+    -moz-border-radius: 999px;
+    border-radius: 999px
+          }
+      }
+
+}
+
+}
+
+
+
+@media all and (max-width: 961px) {
+  .top-recalls{
+ background: #b6b696;
+
+        .recall-label{
+            display:inline-block;
+                vertical-align: middle;
+                width:100%;
+
+              h2{
+
+          }
+}
+
+
+.top-list{
+    display:inline-block;
+    vertical-align: middle;
+    width:100%;
+
+}
+
+}
+
+.navbar-main{
+
+
+.header-logo{
+width:100%;
+img{
+  width:50%;
+}
+
+}
+.header-text{
+width:100%;
+}
+     h1{
+    font-size:30pt;
+    font-family: Avenir;
+    padding: 5 5px;
+      }
+      h2{
+    font-size: 15pt;
+    font-family: Avenir;
+    // float: left;
+
+        }
+        p{
+    font-size: 10pt;
+    font-family: Avenir;
+
+  }
+}
+
+
+
+
+}
+@media all and (max-width: 641px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+@media all and (max-width: 481px) {
+}
+@media all and (max-width: 320px) {
+
+
+}
+
+
+/* Do not remove this comments bellow. It's the markers used by gulp-inject to inject
+   all your sass files automatically */
+// injector
+// endinjector
+
+/* Do not remove this comments bellow. It's the markers used by gulp-inject to inject
+   all your sass files automatically */
+// injector
+// endinjector
