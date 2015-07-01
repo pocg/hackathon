@@ -6,7 +6,12 @@ angular.module('hackathon2015',
     $stateProvider
       .state('home', {
         url: '/',
-        templateUrl: 'app/main/main.html',
+        templateUrl: 'app/landing/landing.html',
+        controller: 'MainCtrl'
+      })
+      .state('results', {
+        url: '/results',
+        templateUrl: 'app/results/results.html',
         controller: 'MainCtrl'
       });
 
