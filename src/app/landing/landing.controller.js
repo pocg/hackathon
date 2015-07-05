@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('hackathon2015')
-  .controller('MainCtrl', function ($scope, search) {
+  .controller('MainCtrl', function ($scope, $rootScope, $state, $http, search) {
     $scope.data = {};
     $scope.groups = [{name: 'Dairy'}, {name: 'Produce'}, {name: 'Meat'}];
     $scope.dairy = [];
@@ -9,35 +9,20 @@ angular.module('hackathon2015')
     $scope.meat = [];
     $scope.other = [];
 
-    $scope.$on('ON_RESULTS', function(event, data) {
-      $scope.group = data.group;
-      $scope.item = data.item;
-      $scope.data.results = data.results;
-      $scope.data.disclaimer = data.disclaimer;
-      if($scope.group.name === 'Dairy'){
-          $scope.dairy.push({item: $scope.item,
-                            results: $scope.data.results,
-                            group: $scope.group});
-      }else if($scope.group.name === 'Produce'){
-          $scope.produce.push({item: $scope.item,
-                            results: $scope.data.results,
-                            group: $scope.group});
-      }else if($scope.group.name === 'Meat'){
-          $scope.meat.push({item: $scope.item,
-                              results: $scope.data.results,
-                              group: $scope.group});
-      }else{
-          $scope.other.push({item: $scope.item,
-                results: $scope.data.results,
-                group: $scope.group});
-      }
-
-    });
-
-    $scope.collapsRecallInfo = function(){
-
+    var startPos;
+    var geoSuccess = function(position) {
+        alert('latitude is: ' + position.coords.latitude + ', longitude is: ' + position.coords.longitude);
+        $http.get('http://maps.googleapis.com/maps/api/geocode/json?latlng='+position.coords.latitude+','+position.coords.longitude+'&sensor=true').then(function(res){
+            alert('Your address is: ' +res.data.results[0].formatted_address);
+        });
     };
-    $scope.collapsRecallInfo = function(){
+    navigator.geolocation.getCurrentPosition(geoSuccess);
 
+    $scope.criteria = "";
+    $scope.search = function(){
+        search.search($scope.criteria).then(function(data){
+            $rootScope.$broadcast('ON_RESULTS', data);
+            $state.go('results');
+        });
     };
   });

@@ -12,9 +12,8 @@ angular.module('hackathon2015',
       .state('results', {
         url: '/results',
         templateUrl: 'app/results/results.html',
-        controller: 'MainCtrl'
+        controller: 'ResultsCtrl'
       });
 
     $urlRouterProvider.otherwise('/');
-  })
-;
+  });

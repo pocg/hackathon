@@ -9,6 +9,7 @@
  */
 angular.module('hackathon2015')
   .factory('search', function search($http, $q, config) {
+    var results = {};
     function searchForRecalls(criteria, group){
       var deferred = $q.defer();
       $http.get(config.baseURL + 'search=' + criteria + '&limit=20').
@@ -54,12 +55,11 @@ angular.module('hackathon2015')
               }
             }
             searchForRecalls(criteria, group).then(function(recalls){
-              deferred.resolve({
-                item: criteria,
-                group: group,
-                results: recalls.results,
-                disclaimer: recalls.disclaimer
-              });
+              results.item = criteria;
+              results.group = group;
+              results.results = recalls.results;
+              results.disclaimer = recalls.disclaimer;
+              deferred.resolve(results);
             });
 
           }).
@@ -74,6 +74,7 @@ angular.module('hackathon2015')
     };
 
     return {
-      search: search
+      search: search,
+      results: results
     };
   });

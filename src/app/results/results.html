@@ -4,7 +4,7 @@
 <div ng-include="'app/components/navbar/navbar.html'"></div>
 <div class ="results-header">Your Grocery List </div>
  
-<div class="left-col">
+<div class="left-col" ng-style="style()">
 
   
 
@@ -16,37 +16,42 @@
         <input  class="upload" id="Upload" type="button" value="Upload List" />
         <input  class="scan"id="Scan" type="button" value="Scan QR" />
     </div>
-
 <div class="food-group">  
  <h3>Dairy</h3>
  <ul class="list-group">
-   <li class="list-group-item" ng-repeat="product in dairy | orderBy:'item'"
-          >{{product.item}} <a class="remove" href="/">Remove</a></li>
+   <li class="list-group-item" ng-class="{alert: product.results.length>0}" ng-repeat="product in dairy | orderBy:'item'"
+         ng-click="collapseRecallInfo(product)" >{{product.item}} <a class="remove" ng-click="removeDairyItem($index)">Remove</a></li>
  </ul>
 </div>
 <div class="food-group">  
-   <h3>Produce</h3> 
-<ul class="list-group">
-  <li class="list-group-item alert">Spinich<a class="remove" href="/">Remove</a></li>
-  <li class="list-group-item">Brocoli<a class="remove" href="/">Remove</a></li>
-  </ul>
-  </div>
+   <h3>Produce</h3>
+    <ul class="list-group">
+        <li class="list-group-item" ng-class="{alert: product.results.length>0}" ng-repeat="product in produce | orderBy:'item'"
+                >{{product.item}} <a class="remove" ng-click="removeProduceItem($index)">Remove</a></li>
+    </ul>
+</div>
  <div class="food-group">   
-     <h3>Meat</h3> 
-<ul class="list-group">
-  <li class="list-group-item">Uncured Pork Bacon<a class="remove" href="/">Remove</a></li>
-  <li class="list-group-item">Beef<a class="remove" href="/">Remove</a></li>
-   <li class="list-group-item alert">Chicken<a class="remove" href="/">Remove</a></li>
-  </ul>
+     <h3>Meat</h3>
+     <ul class="list-group">
+         <li class="list-group-item" ng-class="{alert: product.results.length>0}" ng-repeat="product in meat | orderBy:'item'"
+                 >{{product.item}} <a class="remove" ng-click="removeMeatItem($index)">Remove</a></li>
+     </ul>
     </div>
+  <div class="food-group">
+      <h3>Other</h3>
+      <ul class="list-group">
+          <li class="list-group-item" ng-class="{alert: product.results.length>0}" ng-repeat="product in other | orderBy:'item'"
+                  >{{product.item}} <a class="remove" ng-click="removeOtherItem($index)">Remove</a></li>
+      </ul>
+  </div>
   </div>
 </div>
   
-<div class="right-col">
+<div class="right-col" ng-show="collapsed">
   <div class="section">
         <div class="recall-caption">
            <img class ="alert-icon" src="../assets/images//img_alert_icon.png" alt="alert icon">
-          <h2 class = "caption-text"><strong>RECALL:</strong><br/>Spinach</h2>
+          <h2 class = "caption-text"><strong>RECALL:</strong><br/> {{currentProduct.item}} </h2>
 
         </div>
   </div>
@@ -86,17 +91,21 @@
        <div class="section">
         <div class="result-detail">
 
-<i class="fa fa-arrow-left"></i>
-<i class="fa fa-arrow-right"></i>
-
+<i class="fa fa-arrow-left" ng-click="previous()"></i>
+<i class="fa fa-arrow-right" ng-click="next()"></i>
+    <div class="disclaimer">
+        <h3>Disclaimer</h3>
+        <p>{{data.disclaimer}}</p>
+    </div>
 
      <div class="reason">
      <h3>Reason For Recall</h3>
-     This is some reasoning
+         {{currentProduct.results[currentResultIndex].reason_for_recall}}
      </div> 
      <div class="origin">
      <h3>Recall Origin</h3>
-     This is some reasoning
+         {{currentProduct.results[currentResultIndex].city}}, {{currentProduct.results[currentResultIndex].state}}
+         {{currentProduct.results[currentResultIndex].country}}
      </div> 
    </div>
   </div>
@@ -104,7 +113,7 @@
 </div>
   <hr>
 <!-- We have soem token here from Eric's backend -->
-  <div class="raw-data">
+  <!-- <div class="raw-data">
     <p>{{data.disclaimer}}</p>
     
     <div class="section">
@@ -127,7 +136,7 @@
       </tbody>
     </table>
   </div>
-  </div>
+  </div>-->
 
 </div>
 <div ng-include="'app/components/footer/footer.html'"></div>
