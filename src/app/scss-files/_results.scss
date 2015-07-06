@@ -12,14 +12,14 @@
 	display:inline-block;
 	vertical-align:top;
 	padding:20px;
-.instructions{
-		text-align:center;
-	}
+
 	.groc-list{
 		text-transform: uppercase;
 		border-bottom: 4px solid #249b40;
 	}
-
+	.instructions{
+		text-align:center;
+	}
 						.main-search
 					{
 					    background: none;
@@ -72,7 +72,11 @@
 	}
 	}
 	
-
+.fa{
+cursor:pointer;
+margin-right:10px;
+font-size:24px;
+}
 .right-col{
 	h2{
 		  font-family: "Avenir";

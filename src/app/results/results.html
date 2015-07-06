@@ -90,24 +90,27 @@
 
 
        <div class="section">
+        <i class="fa fa-arrow-left" ng-click="previous()"></i>
+<i class="fa fa-arrow-right" ng-click="next()"></i>
+
         <div class="result-detail">
 
-<i class="fa fa-arrow-left" ng-click="previous()"></i>
-<i class="fa fa-arrow-right" ng-click="next()"></i>
-    <div class="disclaimer">
-        <h3>Disclaimer</h3>
-        <p>{{data.disclaimer}}</p>
-    </div>
+<div class="instructions">Navigate through recalls</div>
 
-     <div class="reason">
-     <h3>Reason For Recall</h3>
-         {{currentProduct.results[currentResultIndex].reason_for_recall}}
-     </div> 
+
      <div class="origin">
      <h3>Recall Origin</h3>
          {{currentProduct.results[currentResultIndex].city}}, {{currentProduct.results[currentResultIndex].state}}
          {{currentProduct.results[currentResultIndex].country}}
      </div> 
+          <div class="reason">
+     <h3>Reason For Recall</h3>
+         {{currentProduct.results[currentResultIndex].reason_for_recall}}
+     </div> 
+         <div class="disclaimer">
+        <h3>Disclaimer</h3>
+        <p>{{data.disclaimer}}</p>
+    </div>
    </div>
   </div>
   
