@@ -118,7 +118,7 @@ font-size:24px;
 }
 @media all and (max-width: 768px) {
 		.left-col{
-			width:100%;
+			width:100% !important;
 		}
 	.right-col{
 			width:100%;
