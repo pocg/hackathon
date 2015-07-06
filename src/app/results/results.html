@@ -27,7 +27,7 @@
 <div class="food-group">  
    <h3>Produce</h3>
     <ul class="list-group">
-        <li class="list-group-item" ng-class="{alert: product.results.length>0}" ng-repeat="product in produce | orderBy:'item'"
+        <li class="list-group-item" ng-class="{alert: product.results.length>0}" ng-repeat="product in produce | orderBy:'item'"ng-click="collapseRecallInfo(product)"
                 >{{product.item}} <a class="remove" ng-click="removeProduceItem($index)">Remove</a></li>
     </ul>
 </div>
@@ -35,6 +35,7 @@
      <h3>Meat</h3>
      <ul class="list-group">
          <li class="list-group-item" ng-class="{alert: product.results.length>0}" ng-repeat="product in meat | orderBy:'item'"
+          ng-click="collapseRecallInfo(product)"
                  >{{product.item}} <a class="remove" ng-click="removeMeatItem($index)">Remove</a></li>
      </ul>
     </div>
@@ -42,6 +43,7 @@
       <h3>Other</h3>
       <ul class="list-group">
           <li class="list-group-item" ng-class="{alert: product.results.length>0}" ng-repeat="product in other | orderBy:'item'"
+            ng-click="collapseRecallInfo(product)"
                   >{{product.item}} <a class="remove" ng-click="removeOtherItem($index)">Remove</a></li>
       </ul>
   </div>
