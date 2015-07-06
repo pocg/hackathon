@@ -12,7 +12,9 @@
 	display:inline-block;
 	vertical-align:top;
 	padding:20px;
-
+.instructions{
+		text-align:center;
+	}
 	.groc-list{
 		text-transform: uppercase;
 		border-bottom: 4px solid #249b40;
@@ -51,6 +53,15 @@
 	.list-group-item{
 		background-color:#f4f4e9;
 		padding-left:30px;
+		text-transform: capitalize;
+		 &:hover{
+		 	background-color:#249b40;
+		 		color: #FFF;
+		 	}
+		 &:active{
+		 	background-color:#249b40;
+		 		color: #FFF;
+		 	}
 		.remove{
 			width:100px;
 			float:right;
