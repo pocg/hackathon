@@ -2,20 +2,20 @@
 
 <div class="container">
 <div ng-include="'app/components/navbar/navbar.html'"></div>
-<div class ="results-header">Your Grocery List </div>
  
 <div class="left-col" ng-style="style()">
 
-  
+ 
 
   <div class="grocery-list">
   <h2 class="groc-list">Your Grocery List</h2>
 <div align="center" padding-top class="main-search">
-        <input style=" width: 250px;" id="criteria" class="form-control search" placeholder="Enter Items" type="search" ng-enter="search()" ng-model="criteria" />
-        <p style="font-size: 14pt;"> OR </p>
-        <input  class="upload" id="Upload" type="button" value="Upload List" />
-        <input  class="scan"id="Scan" type="button" value="Scan QR" />
+        <input style=" width: 250px;" id="criteria" class="form-control search" placeholder="Enter Items and Pres Enter" type="search" ng-enter="search()" ng-model="criteria" />
+<!--         <p style="font-size: 14pt;"> OR </p> -->
+<!--         <input  class="upload" id="Upload" type="button" value="Upload List" /> -->
+<!--         <input  class="scan"id="Scan" type="button" value="Scan QR" /> -->
     </div>
+   <div class="instructions"> Select an item to see details</div>
 <div class="food-group">  
  <h3>Dairy</h3>
  <ul class="list-group">
@@ -26,7 +26,7 @@
 <div class="food-group">  
    <h3>Produce</h3>
     <ul class="list-group">
-        <li class="list-group-item" ng-class="{alert: product.results.length>0}" ng-repeat="product in produce | orderBy:'item'"
+        <li class="list-group-item" ng-class="{alert: product.results.length>0}" ng-repeat="product in produce | orderBy:'item'"ng-click="collapseRecallInfo(product)"
                 >{{product.item}} <a class="remove" ng-click="removeProduceItem($index)">Remove</a></li>
     </ul>
 </div>
@@ -34,6 +34,7 @@
      <h3>Meat</h3>
      <ul class="list-group">
          <li class="list-group-item" ng-class="{alert: product.results.length>0}" ng-repeat="product in meat | orderBy:'item'"
+          ng-click="collapseRecallInfo(product)"
                  >{{product.item}} <a class="remove" ng-click="removeMeatItem($index)">Remove</a></li>
      </ul>
     </div>
@@ -41,6 +42,7 @@
       <h3>Other</h3>
       <ul class="list-group">
           <li class="list-group-item" ng-class="{alert: product.results.length>0}" ng-repeat="product in other | orderBy:'item'"
+            ng-click="collapseRecallInfo(product)"
                   >{{product.item}} <a class="remove" ng-click="removeOtherItem($index)">Remove</a></li>
       </ul>
   </div>
@@ -89,24 +91,28 @@
 
 
        <div class="section">
+        <i class="fa fa-arrow-left" ng-click="previous()"></i>
+           <a ng-click="clickPage($index)" ng-repeat="page in pages">{{page.page}}</a>
+<i class="fa fa-arrow-right" ng-click="next()"></i>
+
         <div class="result-detail">
 
-<i class="fa fa-arrow-left" ng-click="previous()"></i>
-<i class="fa fa-arrow-right" ng-click="next()"></i>
-    <div class="disclaimer">
-        <h3>Disclaimer</h3>
-        <p>{{data.disclaimer}}</p>
-    </div>
+<div class="instructions">Navigate through recalls</div>
 
-     <div class="reason">
-     <h3>Reason For Recall</h3>
-         {{currentProduct.results[currentResultIndex].reason_for_recall}}
-     </div> 
+
      <div class="origin">
      <h3>Recall Origin</h3>
          {{currentProduct.results[currentResultIndex].city}}, {{currentProduct.results[currentResultIndex].state}}
          {{currentProduct.results[currentResultIndex].country}}
      </div> 
+          <div class="reason">
+     <h3>Reason For Recall</h3>
+         {{currentProduct.results[currentResultIndex].reason_for_recall}}
+     </div> 
+         <div class="disclaimer">
+        <h3>Disclaimer</h3>
+        <p>{{data.disclaimer}}</p>
+    </div>
    </div>
   </div>
   

@@ -1,30 +1,28 @@
    
 
-<div class="container">
+<div class="">
 <div ng-include="'app/components/navbar/navbar.html'"></div>
  
  <div class="navbar-main">
 
 
           <div class="header-text">
-            <h1>Is what you're eating safe?</h1>
-            <h2>Check your grocery list</h2>
-            <!-- <p>With the Grocery List Checker, find important food recalls in your area to keep your family safe.</p> -->
-          </div>
-          <div class="header-logo">
+			<div class="header-logo">
             <img alt="Grocery Logo" src="../assets/images/img_grocerylistchecker_logo_low-res.png" />
           </div>
-      <div>
-      <p>With the Grocery List Checker, find important food recalls in your area to keep your family safe.</p>
+            <h1>Is what you're eating safe?</h1>
+            <h2>Check your grocery list</h2>
+            <p>With the Grocery List Checker, find important food recalls in your area to keep your family safe.</p>
           </div>
-
+          
+      <div>
     </div>
 
 
 
 <div class="top-recalls" >
     <div class="recall-label">
-    <h2>Top Product Recalls</h2>
+    <h2>Active Product Recalls</h2>
     </div>
     <div class="top-list">
       <ol class="recall-items">
@@ -50,10 +48,12 @@
    <!-- </div> -->
     </div>
     <div align="center" class="navbar-search">
-        <input style=" width: 250px;" id="criteria" class="form-control search" placeholder="Enter Items" type="search" ng-enter="search()" ng-model="criteria" />
-        <h2><span> OR </span></h2>
+        <input style=" width: 250px;" id="criteria" class="form-control search" placeholder="Enter Item" type="search" ng-enter="search()" ng-model="criteria" />
+		<input ng-click="search()" ng-enter="search()" class="upload" id="Upload" type="button" value="Add Item" />
+
+<!--         <h2><span> OR </span></h2>
         <input  class="upload" id="Upload" type="button" value="Upload List" />
-        <input   class="scan"id="Scan" type="button" value="Scan QR" />
+        <input   class="scan"id="Scan" type="button" value="Scan QR" /> -->
     </div>
     </div>
 

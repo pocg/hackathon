@@ -17,7 +17,9 @@
 		text-transform: uppercase;
 		border-bottom: 4px solid #249b40;
 	}
-
+	.instructions{
+		text-align:center;
+	}
 						.main-search
 					{
 					    background: none;
@@ -51,6 +53,15 @@
 	.list-group-item{
 		background-color:#f4f4e9;
 		padding-left:30px;
+		text-transform: capitalize;
+		 &:hover{
+		 	background-color:#249b40;
+		 		color: #FFF;
+		 	}
+		 &:active{
+		 	background-color:#249b40;
+		 		color: #FFF;
+		 	}
 		.remove{
 			width:100px;
 			float:right;
@@ -61,7 +72,11 @@
 	}
 	}
 	
-
+.fa{
+cursor:pointer;
+margin-right:10px;
+font-size:24px;
+}
 .right-col{
 	h2{
 		  font-family: "Avenir";
@@ -103,7 +118,7 @@
 }
 @media all and (max-width: 768px) {
 		.left-col{
-			width:100%;
+			width:100% !important;
 		}
 	.right-col{
 			width:100%;
