@@ -69,12 +69,22 @@ angular.module('hackathon2015')
 
     $scope.collapseRecallInfo = function(product){
         $scope.currentProduct = product;
+        $scope.recallCount = product.results.length;
+        $scope.pages = [];
+        for(var i = 0; i<$scope.recallCount; i++){
+            $scope.pages.push({page: i+1, index: i});
+        }
         $scope.collapsed = !$scope.collapsed;
         if($scope.collapsed)
             $scope.colwidth = 48;
         else
             $scope.colwidth = 100;
     };
+
+    $scope.clickPage = function(index){
+        if($scope.currentResultIndex < index && index >=$scope.currentResultIndex )
+            $scope.currentResultIndex = index;
+    }
 
     $scope.currentResultIndex = 0;
     $scope.next = function(){

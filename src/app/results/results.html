@@ -92,6 +92,7 @@
 
        <div class="section">
         <i class="fa fa-arrow-left" ng-click="previous()"></i>
+           <a ng-click="clickPage($index)" ng-repeat="page in pages">{{page.page}}</a>
 <i class="fa fa-arrow-right" ng-click="next()"></i>
 
         <div class="result-detail">
