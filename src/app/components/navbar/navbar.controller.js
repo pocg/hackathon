@@ -9,4 +9,11 @@ angular.module('hackathon2015')
           $state.go('results');
       });
     };*/
+
+    $scope.signin = function(){
+        $state.go('signin');
+    }
+    $scope.signup = function(){
+        $state.go('signup');
+    }
   });

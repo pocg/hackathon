@@ -26,22 +26,9 @@
     </div>
     <div class="top-list">
       <ol class="recall-items">
-        <li class="ri">
-          <div class="item-name"><a ng-href="#">ITEM 1</a></div>
-          <div class="item-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
-        </li>
-        <li class="ri">
-          <div class="item-name"><a ng-href="#">ITEM 2</a></div>
-          <div class="item-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
-
-        </li>
-         <li class="ri">
-          <div class="item-name"><a ng-href="#">ITEM 3</a></div>
-          <div class="item-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
-        </li> 
-         <li class="ri">
-          <div class="item-name"><a ng-href="#">ITEM 4</a></div>
-          <div class="item-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</div>
+        <li class="ri" ng-repeat="product in allrecalls">
+          <div class="item-name"><a ng-href="#">{{product.product}}</a></div>
+          <div class="item-description">{{product.reason}} </div>
         </li>
       </ol>
       </div>
