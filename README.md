@@ -1,5 +1,8 @@
 # Grocery List Checker
 
+Prototype URL: http://pocg.ct-gr.com
+Branch: [master](https://github.com/pocg/hackathon/tree/master)
+
 In June 2015, the Government published a Request for Quotation (RFQ) to establish multiple award Blanket Purchase Agreements for the General Service Administration’s (GSA) 18F, a fee-drive organization that designs, builds, and operates user-centric digital services and provides consulting services. The RFQ challenged companies to design and develop a working prototype using datasets from the Food and Drug Administration (FDA).
 
 Phase One Consulting Group (Phase One) formed a MULTI-DISCIPLINARY TEAM to address the challenge and to design and develop the working prototype. Richie Stockholm served as the team’s Product Owner and was responsible for directing the team’s efforts and managed the effort timeline as he ensured the prototype’s quality from the ideation stage through its final delivery. The team consisted of members with a broad range of skill sets including a design team whose members focused on interacting with end users and creating a prototype that met their needs and expectations and a development team whose members focused on developing the prototype using Agile  methodologies. The full team is listed below:
