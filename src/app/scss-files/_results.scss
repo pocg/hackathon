@@ -98,6 +98,12 @@ font-size:24px;
 	.pageNumbers{
 		padding:2px;
 	}
+	.WrapPage{
+		display: -webkit-flex; /* Safari */
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    display: flex;   
+    flex-wrap: wrap;
+	}
 .recall-caption{
 	.alert-icon{
 	width:50px;
