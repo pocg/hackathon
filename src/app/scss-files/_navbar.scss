@@ -33,7 +33,6 @@
      h1{
     font-size:68pt;
     font-family: Avenir;
-		padding: 5 5%;
       }
       h2{
     font-size: 36pt;
@@ -53,16 +52,17 @@
 		width:20%;
 	display:inline-block;
 	vertical-align:top;
-	align: left;
+	float: right;
+	padding-top: 5%;
 		img{
 			width: 300px;
 			height: auto;
 			min-width: 40%;
-			padding-top: 30%;
+			//padding-top: 30%;
 		}
 	}
 	.header-text{
-	  width:68%;
+	  //width:68%;
 	  display:inline-block;
 	  vertical-align:top;
 		padding-right: 3%;
