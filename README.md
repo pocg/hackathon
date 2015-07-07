@@ -19,7 +19,7 @@ Phase One Consulting Group (Phase One) formed a [multi-disciplinary team](https:
 *	Matt Russell – Agile Coach
 
 ## Prototype Specifics
-The prototype chosen was a Grocery List checker. A solution which consumes FDA data regarding food recalls via its open API and displays the data in a meaningful way for users on all devices using a responsive design, the Grocery List Checker allows users to enter items on their grocery list to see which items may be under a recall. This rather simple app is built on Node.js and uses SASS to control styling. Several other technologies were used in development of this prototype and include:
+The prototype chosen was a Grocery List checker. A solution which consumes FDA data regarding food recalls via its open API and displays the data in a meaningful way for users on all devices using a responsive design, the Grocery List Checker allows users to enter items on their grocery list to see which items may be under a recall in their state based on the devices GPS data. This rather simple app is built on Node.js and uses SASS to control styling. Several other technologies were used in development of this prototype and include:
 * Bower
 * Gulp
 * AngularJS
@@ -31,7 +31,7 @@ The prototype chosen was a Grocery List checker. A solution which consumes FDA d
 * Karma
 * Jasmine
 
-The prototype is deployed in Amazon Web Services and is continously monitored using Uptime Robot. All technologies we selected are open-source or freely licensed. [Instructions for installation](https://github.com/pocg/hackathon/blob/master/installation%20instructions) are provided in this repository.
+The prototype is deployed in Amazon Web Services and is continously monitored using Uptime Robot. All technologies we selected are open-source or freely licensed. The system can be deployed using the [installation instruction file](https://github.com/pocg/hackathon/blob/master/installation%20instructions) in the repository of built using the [Docker file](https://github.com/pocg/hackathon/blob/master/Dockerfiles.zip) are provided in this repository.
 
 ## Design Approach
 The design team was tasked with identifying and providing developers with information necessary to develop a solution from the available datasets. In order to ensure the solution identified and defined was driven by users and that the design process participatory, interactive, and collaborative, the team employed a user-centered approach to identify challenges and opportunities, define features users need and expect in the initial solution, and determine which features users would like in future iterations. The team employed user-centered design techniques.
