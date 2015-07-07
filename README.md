@@ -53,4 +53,10 @@ User Acceptance Testing (UAT) was conducted after the development team finalized
 The development team was tasked with developing the prototype. In order to ensure the solution employed an iterative approach which incorporated feedback from user interactions, the development team employed Agile methodologies. Developers had daily check-ins with the Product Owner alongside design reviews. Matt Russell provided guidance on creating the backlog based on the design. The [GitHub Issues](https://github.com/pocg/hackathon/issues) feature was used to track that backlog.
 
 ## Conclusion
-The working prototype designed and developed for this effort is an initial app which allows the public to check the food items they have purchased or plan to purchase against the FDA’s dataset of food recalls. However, the prototype is basic in functionality and only reflects the initial idea. Additional iterations woul bring many more functions as identified by users which will allow the public to use the app as a daily tool. The future app will have the ability to choose food items from a pick list, pre-populate a grocery list based on previous items, and display healthier substitutes for items. The future app will include various improvements such as integrated news and social media with additional recall information and notifications.
+The working prototype designed and developed for this effort is an initial app which allows the public to check the food items they have purchased or plan to purchase against the FDA’s dataset of food recalls. However, the prototype is basic in functionality and only reflects the initial idea. Additional iterations would bring many more functions as identified by users which will allow the public to use the app as a daily tool. Those functions include
+* choosing grocery items from a pick list
+* Per-populate the grocery list on 
+* Display healthier substitutes
+* Integrate social media information
+* Proivde links to related news articles and other media attention
+
