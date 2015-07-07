@@ -10,7 +10,7 @@ Phase One Consulting Group (Phase One) formed a MULTI-DISCIPLINARY TEAM to addre
 
 * Richie Stockholm – Product Manager/Owner and Technical Architect
 * Casey Linsey – Interaction Designer/ User Researcher/ Usability Tester and Writer/ Content Designer/ Content Strategist
-* Colin Klamper – Delivery Manager
+* Collin Klamper – Delivery Manager
 *	Donn Escario – Visual Designer
 *	Julia Shevchenko – DevOps Engineer
 *	Rory Bell – Frontend Developer
