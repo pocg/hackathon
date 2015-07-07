@@ -16,9 +16,6 @@
           </div>
           
       <div>
-     <!--  <p>With the Grocery List Checker, find important food recalls in your area to keep your family safe.</p>
-          </div> -->
-
     </div>
 
 
@@ -51,8 +48,8 @@
    <!-- </div> -->
     </div>
     <div align="center" class="navbar-search">
-        <input style=" width: 250px;" id="criteria" class="form-control search" placeholder="Enter Items and Press Enter" type="search" ng-enter="search()" ng-model="criteria" />
-
+        <input style=" width: 250px;" id="criteria" class="form-control search" placeholder="Enter Item" type="search" ng-enter="search()" ng-model="criteria" />
+		<input ng-click="search()" ng-enter="search()" class="upload" id="Upload" type="button" value="Add Item" />
 
 <!--         <h2><span> OR </span></h2>
         <input  class="upload" id="Upload" type="button" value="Upload List" />

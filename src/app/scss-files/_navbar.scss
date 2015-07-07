@@ -156,13 +156,12 @@ img.logoImage {
                 overflow:visible;
               h2{
                 width:250px;
-              font-size: 32pt;
-              color: White;
-              border-bottom: 5px solid white;
-              text-transform: uppercase;
-              text-align: left;
-              margin-left:30px;
-              //margin-right:30px;
+                font-size: 32pt;
+				  color: White;
+				  border-bottom: 5px solid white;
+				  text-transform: uppercase;
+				  text-align: left;
+				  margin-left:30px;
           }
 }
 
@@ -173,20 +172,22 @@ img.logoImage {
     width:69%;
 	padding-top: 2%;
 	padding-left: 5%;
+	padding-right: 5%;
 ol {
   color:#fff;
     display: block;
-    //padding: 0 0 0 26px;
+    //padding: 0 26px;
     list-style: none;
     overflow: hidden;
     counter-reset: numList;
     li {
         width: 230px;
         margin-right: 80px;
-         margin-bottom: 20px;
+        margin-bottom: 20px;
         float: left;
         position: relative;
         left:50px;
+		padding-left: 3%;
               a{
         color:#fff;
         font-size:1.2em;
@@ -224,7 +225,7 @@ ol {
                 width:100%;
 
               h2{
-
+				font-size: 20pt;
           }
 }
 
