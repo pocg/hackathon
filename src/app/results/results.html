@@ -63,49 +63,19 @@
         </div>
   </div>
 
-   <!--  This section is a todo we may leave off since we can't get data -->
-    
-
-<!--   <div class="section">
-     <div class="map">
-     <img src="" />
-     </div>
-  </div> -->
-    <!-- <div class="section"> 
-
-
-     <div class="substitutes">
-     <h3>Suggested Substitues</h3>
-    <ul>
-    <li>
-    <div class="part1">Kale</div>
-    	<div class="part2">information</div> 
-    </li>
-    <li>
-    <div class="part1">Romain Lettuce</div>
-    	<div class="part2">information</div> 
-    </li>
-    <li>
-    <div class="part1">Arugula</div>
-    	<div class="part2">information</div> 
-    </li>
-    </ul>
-     </div> -->
-
-
-
-
        <div class="section">
-        <i class="fa fa-arrow-left" ng-click="previous()"></i>
-           <a ng-click="clickPage($index)" ng-repeat="page in pages">{{page.page}}</a>
+        <i class="fa fa-arrow-left" ng-click="previous()"></i>Navigate through recalls&nbsp;
+           <!--<a ng-click="clickPage($index)" href="#" ng-repeat="page in pages">&nbsp;{{page.page}}</a>&nbsp;-->
 <i class="fa fa-arrow-right" ng-click="next()"></i>
 
         <div class="result-detail">
 
-<div class="instructions">Navigate through recalls</div>
+    <div class="firm">
+    <h3>Recalling Firm</h3>
+        {{currentProduct.results[currentResultIndex].recalling_firm}}
+    </div>
 
-
-     <div class="origin">
+            <div class="origin">
      <h3>Recall Origin</h3>
          {{currentProduct.results[currentResultIndex].city}}, {{currentProduct.results[currentResultIndex].state}}
          {{currentProduct.results[currentResultIndex].country}}
@@ -123,31 +93,5 @@
   
 </div>
   <hr>
-<!-- We have soem token here from Eric's backend -->
-  <!-- <div class="raw-data">
-    <p>{{data.disclaimer}}</p>
-    
-    <div class="section">
-    <table class="table table-striped">
-      <thead>
-      <tr>
-        <th>City</th>
-        <th>State</th>
-        <th>Recalling Firm</th>
-        <th>Reason</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr ng-repeat="result in data.results | orderBy:'state'">
-        <td>{{result.city}}</td>
-        <td>{{result.state}}</td>
-        <td>{{result.recalling_firm}}</td>
-        <td>{{result.reason_for_recall}}</td>
-      </tr>
-      </tbody>
-    </table>
-  </div>
-  </div>-->
-
 </div>
 <div ng-include="'app/components/footer/footer.html'"></div>

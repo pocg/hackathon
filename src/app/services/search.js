@@ -10,9 +10,11 @@
 angular.module('hackathon2015')
   .factory('search', function search($http, $q, config) {
     var results = {};
+    var location = {};
+    var all = {};
     function searchForRecalls(criteria, group){
       var deferred = $q.defer();
-      $http.get(config.baseURL + 'search=' + criteria + '&limit=20').
+      $http.get(config.baseURL + 'search=reason_for_recall:' + criteria + '+AND+city:' + location.city + '+AND+state:' + location.state +'&limit=20').
         success(function(data, status, headers, config) {
           // this callback will be called asynchronously
           // when the response is available
@@ -73,8 +75,33 @@ angular.module('hackathon2015')
       return deferred.promise;
     };
 
+
+    var searchAllRecalls = function(){
+      var deferred = $q.defer();
+      $http.get(config.baseURL + 'search=city:' + location.city + '+AND+state:' + location.state +'&limit=20').
+          success(function(data, status, headers, config) {
+            // this callback will be called asynchronously
+            // when the response is available
+            deferred.resolve({
+              results: data.results,
+              disclaimer: data.meta.disclaimer
+            });
+          }).
+          error(function(data, status, headers, config) {
+            // called asynchronously if an error occurs
+            // or server returns response with an error status.
+            deferred.resolve({
+              message: 'No Results'
+            });
+          });
+      return deferred.promise;
+    };
+
     return {
       search: search,
-      results: results
+      searchAllRecalls: searchAllRecalls,
+      results: results,
+      location: location,
+      all: all
     };
   });
